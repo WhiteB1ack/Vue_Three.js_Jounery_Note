@@ -9,7 +9,6 @@ import { OrbitControls, Wireframe } from 'three/examples/jsm/Addons.js';
 import * as dat from 'lil-gui'
 import { FontLoader } from 'three/examples/jsm/Addons.js';
 import { TextGeometry } from 'three/examples/jsm/Addons.js';
-import { ColorNodeUniform } from 'three/src/renderers/common/nodes/NodeUniform.js';
 
 // 获取元素DOM
 const threeContainer = ref<HTMLDivElement | null>(null)
@@ -29,7 +28,7 @@ const matcapTextutre = textureLoader.load('/static/color1.jpg')
 const fontLoader = new FontLoader()
 
 fontLoader.load(
-  '/static/13-3D Text/fonts/helvetiker_regular.typeface.json',
+  '/static/13-3D-Text/fonts/helvetiker_regular.typeface.json',
   (font) => {
     const textGeometry = new TextGeometry(
       'Hello Three.js',
